@@ -6,7 +6,7 @@ const app = express();
 
 // Configure CORS to allow requests from any origin
 const corsOptions = {
-  origin: "http://localhost:5173", // Allow requests from the frontend port
+  origin: "*", // Allow requests from the frontend port
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
